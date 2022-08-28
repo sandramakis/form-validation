@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section.image{
+    background-image: url(imgs/halie-west-25xggax4bSA-unsplash.jpg);
+    position: relative;
+    height: 90vh;
+}
+
+.logo{
+    position: absolute;
+    width: 20%;
+    top: 30%;
+    left: 40%;
+}
+
+main{
+    padding: .5rem;
+}
+
+section.info{
+    padding: 1rem;
+}
+
+section.write-up{
+    line-height: 1.5rem;
+    padding: 2rem;
+    background-color: whitesmoke;
+}
+
+aside{
+    text-align: center;
+    line-height: 3rem;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    /* border-left:5px  solid green; */
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+}
+
+form span{
+    padding: 2rem 1rem;
+}
+
+label{
+    line-height: 3rem;
+}
+
+input{
+    padding: .5rem;
+}
+
+input:focus{
+    border: 3px solid green;
+    /* background-color: ; */
+}
+
+.create-account{
+    padding: 20rem 0;
+}
+
+button{
+    padding: .5rem;
+    cursor: pointer;
+    border-radius: 8%;
+    background-color: rgb(50, 189, 50);
+    /* background-color: #596d48; */
+    margin-top: 1rem;
+}
+
+button:hover{
+    background-color: rgb(21, 147, 21);
+}
+
+a{
+    color: green;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(11, 71, 11);
+}
+
+
+/* Media screen */
+@media (min-width: 768px) {
+    body{
+        font-size: large;
+    }
+
+    section.image{
+        background-image: url(imgs/halie-west-25xggax4bSA-unsplash.jpg);
+        position: relative;
+        width: 40vw;
+        margin-left: -1rem;
+        height: 100vh;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    
+    .logo{
+        position: absolute;
+        width: 20%;
+        top: 30%;
+        left: 40%;
+    }
+
+    input{
+        width: 20vw;
+    }   
+}
