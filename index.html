@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>FORM VALIDATION</title>
+  </head>
+  <body>
+    <form action="form_submitted.html" method="*" target="_blank">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <br />
+        <input type="text" name="fullName" id="fullName" required />
+      </div>
+
+      <div>
+        <label for="email">E-mail:</label>
+        <br />
+        <input type="email" name="email" id="email" required />
+      </div>
+
+      <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <br />
+        <input type="number" name="phoneNumber" id="phoneNumber" required />
+      </div>
+
+      <fieldset>
+        <legend>Gender</legend>
+        <select name="gender" id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+      </fieldset>
+
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input type="password" name="password" id="password" required />
+      </div>
+      <button type="submit" target="form_submitted.html">SUBMIT</button>
+    </form>
+  </body>
+</html>
